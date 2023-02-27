@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeroesRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
