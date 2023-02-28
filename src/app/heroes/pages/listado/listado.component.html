@@ -22,6 +22,21 @@
       fxFlex.lg="15"
       fxFlex.sm="30"
       *ngFor="let heroe of heroes">
+<!--  Mandamos al componente <app-heroe-trajeta> el array de heroes -->
+<!--<app-heroe-trajeta [misHeroes]="heroes"></app-heroe-trajeta>-->
+<app-heroe-trajeta [heroe]="heroe"></app-heroe-trajeta>
+</div>
+
+</div>
+<!--
+<div fxLayout="row wrap"
+      fxLayout.xs="column"
+      fxLayoutAlign="center"
+      fxLayoutGap="20px">
+  <div fxFlex="20"
+      fxFlex.lg="15"
+      fxFlex.sm="30"
+      *ngFor="let heroe of heroes">
     <mat-card>
       <mat-card-header>
         <mat-card-title>{{ heroe.superhero}}</mat-card-title>
@@ -44,3 +59,4 @@
   </div>
 
 </div>
+-->
