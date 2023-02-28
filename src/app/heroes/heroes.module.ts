@@ -30,7 +30,8 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+
   ]
 })
 export class HeroesModule { }

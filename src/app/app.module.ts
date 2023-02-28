@@ -7,13 +7,12 @@ import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
-import { ImagenPipe } from './herores/pipes/imagen.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    ImagenPipe
+
   ],
   imports: [
     BrowserModule,
@@ -21,6 +20,7 @@ import { ImagenPipe } from './herores/pipes/imagen.pipe';
     HeroesRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
