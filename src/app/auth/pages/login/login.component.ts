@@ -9,6 +9,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginComponent {
 
+
   constructor( private router: Router,
                 private authService: AuthService) {}
 
@@ -22,4 +23,11 @@ export class LoginComponent {
       }
     })
   }
+
+  ingresarSinLogin() {
+
+    this.authService.logout();
+    this.router.navigate(['/heroes']);
+  }
+
 }
